@@ -1,0 +1,5 @@
+{
+  "name": "Classroom Progress Dashboard",
+  "description": "A visual dashboard for teachers to track student progress in real-time and for students to view their own performance against the class average. Features AI-powered analysis and study tips.",
+  "requestFramePermissions": []
+}

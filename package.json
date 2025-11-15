@@ -1,0 +1,23 @@
+{
+  "name": "classroom-progress-dashboard",
+  "version": "1.0.0",
+  "description": "A visual dashboard for teachers to track student progress in real-time and for students to view their own performance against the class average.",
+  "main": "api/server.js",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --platform=browser --outfile=dist/bundle.js --loader:.tsx=tsx --jsx=automatic",
+    "start": "npm run build && node api/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.20.2"
+  }
+}
