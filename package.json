@@ -5,13 +5,18 @@
   "main": "api/server.js",
   "scripts": {
     "build": "esbuild index.tsx --bundle --platform=browser --outfile=dist/bundle.js --loader:.tsx=tsx --jsx=automatic",
-    "start": "npm run build && node api/server.js"
+    "start": "pm2-runtime start api/server.js --name \"motivation-classroom\"",
+    "stop": "pm2 stop motivation-classroom || true",
+    "restart": "pm2 restart motivation-classroom",
+    "logs": "pm2 logs motivation-classroom",
+    "list": "pm2 list"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "pm2": "^5.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
